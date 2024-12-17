@@ -10378,6 +10378,10 @@ const cards = [
   },
 ];
 
-//1) while chaining array methods print each card that has a rarity value of "rare"
+//1) while chaining array methods, print each card that has a rarity value of "rare"
+cards.filter((el) => el.rarity === "Rare").forEach((el) => console.log(el));
 
-//2)while chainign array methods, print each card that includes "ICE" in it's printings
+//2) while chaining array methods, print each card that includes "ICE" in its printings
+cards
+  .filter((el) => el.printings.includes("ICE"))
+  .forEach((el) => console.log(el));
